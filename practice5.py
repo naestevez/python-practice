@@ -48,7 +48,9 @@ for num1 in list1:
         if num1 in list2:
             sharedNums.append(num1)
     
-print sharedNums
+print "list1: %s" % list1
+print "list2: %s" % list2    
+print np.unique(sharedNums)
     
     
 
