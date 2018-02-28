@@ -9,14 +9,14 @@ import random
 import time
 
 print("Let's play a round of rock, paper, scissors!, Ya ready?")
-time.sleep(2)
+time.sleep(2) #2 second delay for more spoken feel
 choices = ["rock", "paper", "scissors"]
-compChoice = random.choice(choices)
+compChoice = random.choice(choices) #randomly selects from choices list
 
 userChoice = raw_input("What will it be? rock, paper or scissors?")
 userChoice = userChoice.lower()
 
-if userChoice in choices: #is in choices list:
+if userChoice in choices: #checks for correct selection of options
     if userChoice == compChoice:
         print("There is a tie!")
     elif userChoice == "rock":
